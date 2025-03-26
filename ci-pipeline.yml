@@ -1,0 +1,7 @@
+main.py
+# Code for the Flask application.
+# Includes routes and main logic.
+
+test_app.py
+# Unit tests for main.py.
+# Check that routes and functions work correctly.
