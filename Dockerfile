@@ -1,20 +1,20 @@
-# Используем официальный образ Python
+# Using the official Python image
 FROM python:3.12.2
 
-# Устанавливаем рабочую директорию внутри контейнера
+# Set up a working directory inside the container
 WORKDIR /app
 
-# Копируем файл зависимостей в контейнер
+# Copy the dependencies file to the container
 COPY requirements.txt .
 
-# Устанавливаем зависимости
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копируем весь проект в контейнер
+# Copy the entire project into the container
 COPY . .
 
-# Открываем порт для приложения
+# Open the port for the application
 EXPOSE 5000
 
-# Запуск приложения
+# Launch the application
 CMD ["python", "app.py"]
