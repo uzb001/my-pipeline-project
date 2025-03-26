@@ -1,3 +1,7 @@
+# test_app.py
+# Author: [Oybek Isroilov]
+# Description: This is a test application for tests.
+
 from app import app
 
 def test_home():
