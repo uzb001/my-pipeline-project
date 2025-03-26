@@ -1,3 +1,8 @@
+# main.py
+# Author: [Oybek Isroilov]
+# Description: This file contains the main application logic.
+# Dependencies: Flask, Requests
+
 from flask import Flask
 from datetime import datetime
 
